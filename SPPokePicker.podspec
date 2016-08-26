@@ -21,25 +21,19 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 # 4 - Replace with your name and e-mail address
 s.author = { "David Jupijn" => "d.jupijn@sping.nl" }
 
-
 # 5 - Replace this URL with your own Github page's URL (from the address bar)
-s.homepage = "http://www.sping.nl"
-
-# For example,
-# s.homepage = "https://github.com/davidjupijnsping/SPPokePicker"
-
+s.homepage = "https://github.com/davidjupijnsping/SPPokePicker"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
 s.source = { :git => "https://github.com/davidjupijnsping/SPPokePicker.git", :tag => "#{s.version}"}
-
 
 # 7
 s.framework = "UIKit"
 
 # 8
-s.source_files = "RWPickFlavor/**/*.{swift}"
+s.source_files = "SPPokePicker/**/*.{swift}"
 
 # 9
-s.resources = "RWPickFlavor/**/*.{png,storyboard}"
+s.resources = "SPPokePicker/**/*.{png,storyboard}"
 
 end
