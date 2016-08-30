@@ -31,9 +31,9 @@ s.source = { :git => "https://github.com/davidjupijnsping/SPPokePicker.git", :ta
 s.framework = "UIKit"
 
 # 8
-s.source_files = "SPPokePicker/*.{swift}"
+s.source_files = "SPPokePicker/**/*.{swift}"
 
 # 9
-s.resources = "SPPokePicker/Pokemon/*.{png,storyboard}"
+s.resources = "SPPokePicker/**/*.{png,storyboard}"
 
 end
