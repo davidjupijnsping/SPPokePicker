@@ -8,23 +8,23 @@
 
 import UIKit
 
-class PokemonViewController: UIViewController {
+public class PokemonViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 
-    let resourcePath = "\(NSBundle.mainBundle().resourcePath!)/Pokemon"
+    let resourcePath = "\(NSBundle(forClass: PokemonViewController.self).resourcePath!)/"
     var pokemon: [String] = []
     var index = 0
 
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadImages()
     }
 
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
