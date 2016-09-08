@@ -34,7 +34,13 @@ public class PokemonViewController: UIViewController {
         var resourcesContent : [String] {
             return try! NSFileManager().contentsOfDirectoryAtPath(resourcePath)
         }
-        pokemon = resourcesContent
+
+        for file in resourcesContent {
+            if file.hasSuffix("png") {
+                pokemon.append(file)
+            }
+        }
+
         imageView.image = UIImage(contentsOfFile: "\(resourcePath)/\(pokemon.first!)")
         updatePokemonName()
 
@@ -66,4 +72,3 @@ public class PokemonViewController: UIViewController {
         nameLabel.text = pokemon[index].componentsSeparatedByString(".").first!
     }
 }
-
